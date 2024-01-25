@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-30T05:35:43.702Z",
+    "end": "2023-12-30T05:35:58.223Z",
+    "duration": 14521,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6bee5dca-0a03-42ce-a730-56cf3a4ad68d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\ExplicitAssert.cy.js",
+      "file": "cypress\\e2e\\ExplicitAssert.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1851e032-183f-4603-b61d-31d6ea9e63d2",
+          "title": "Test Suite1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test1",
+              "fullTitle": "Test Suite1 Test1",
+              "timedOut": null,
+              "duration": 3535,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');\ncy.get('input[name=\"username\"]').type('Admin');\ncy.get('input[name=\"password\"]').type('admin123');\ncy.get('.oxd-button.oxd-button--medium.oxd-button--main.orangehrm-login-button').click();\nlet expName = 'Test Tester';\ncy.get('.oxd-userdropdown-name').then(function (x) {\n  let actName = x.text();\n  //BDD Style\n  // expect(actName).to.equal(expName)\n  // expect(actName).to.not.equal(expName)\n  //TDD Style\n  assert.equal(actName, expName);\n  assert.notEqual(actName, expName);\n});",
+              "err": {
+                "message": "AssertionError: expected 'Paul Collings' to equal 'Test Tester'",
+                "estack": "AssertionError: expected 'Paul Collings' to equal 'Test Tester'\n    at Context.eval (webpack:///./cypress/e2e/ExplicitAssert.cy.js:19:15)",
+                "diff": "- 'Paul Collings'\n+ 'Test Tester'\n"
+              },
+              "uuid": "149c039c-ab8e-4322-b4c7-81ecc334a0c7",
+              "parentUUID": "1851e032-183f-4603-b61d-31d6ea9e63d2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "149c039c-ab8e-4322-b4c7-81ecc334a0c7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3535,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

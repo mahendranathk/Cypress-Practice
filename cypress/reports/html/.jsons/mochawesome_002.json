@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-30T05:34:38.340Z",
+    "end": "2023-12-30T05:35:15.897Z",
+    "duration": 37557,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ecc984ae-5da8-42ad-8d0b-bf302e76c048",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Dropdown.cy.js",
+      "file": "cypress\\e2e\\Dropdown.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cc117fd3-c0bb-4d9a-a001-cffcf4617a4f",
+          "title": "Test Suite1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Autosuggest  Dropdown",
+              "fullTitle": "Test Suite1 Autosuggest  Dropdown",
+              "timedOut": null,
+              "duration": 12595,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('input[name=\"search\"]').type('Delhi');\ncy.get('.suggestion-link').contains('Delhi University').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `input[name=\"search\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `input[name=\"search\"]`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/Dropdown.cy.js:17:11)",
+                "diff": null
+              },
+              "uuid": "bcddeecb-a0f8-4b27-841a-b1bc80aa29cd",
+              "parentUUID": "cc117fd3-c0bb-4d9a-a001-cffcf4617a4f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "bcddeecb-a0f8-4b27-841a-b1bc80aa29cd"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 12595,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

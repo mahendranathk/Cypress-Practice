@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-30T05:35:22.895Z",
+    "end": "2023-12-30T05:35:37.932Z",
+    "duration": 15037,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a630f615-7d3c-42f9-afd8-9fd4296f7320",
+      "title": "",
+      "fullFile": "cypress\\e2e\\example.cy.js",
+      "file": "cypress\\e2e\\example.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dcfa44d0-6b50-4c78-b00e-7a875bd479e7",
+          "title": "Tutorialspoint Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Scenario 1",
+              "fullTitle": "Tutorialspoint Test Scenario 1",
+              "timedOut": null,
+              "duration": 2475,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// test step for URL launching\ncy.visit('https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_ondblclick3');\ncy.frameLoaded('#iframeResult');\n// cy.iframe('#iframeResult').find('button[ondblclick=\"myFunction()\"]').trigger('dblclick')\n// cy.iframe('#iframeResult').find('#field2').should('have.value','Hello World!')\ncy.iframe('#iframeResult').find('button[ondblclick=\"myFunction()\"]').dblclick();\ncy.iframe('#iframeResult').find('#field2').should('have.value', 'Hello World!');",
+              "err": {},
+              "uuid": "bab869c9-2204-47c7-b0ff-1e87c4ca8976",
+              "parentUUID": "dcfa44d0-6b50-4c78-b00e-7a875bd479e7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bab869c9-2204-47c7-b0ff-1e87c4ca8976"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2475,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
