@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "regression": "cypress run --browser chrome --spec cypress/e2e/**.js --env allure=true",
-    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
-    "allure:report": "allure generate allure-results --clean -o allure-report",
-    "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true"
+    "test": "cypress run",
+    "badges": "npx -p dependency-version-badge update-badge cypress cypress-split",
+    "debug": "DEBUG=cypress-split SPLIT=6 SPLIT_INDEX=5 npx cypress run",
+    "lint": "tsc --noEmit cypress.config.ts"
   },
   "author": "",
   "license": "ISC",
