@@ -20,8 +20,6 @@ module.exports = defineConfig({
     includeShadowDom:true,
     chromeWebSecurity:false,
     baseUrl:'https://magento.softwaretestingboard.com/',
-    defaultCommandTimeout:8000,
-    pageLoadTimeout:8000,
     failOnStatusCode: false,
     "retries": {      
       "runMode": 1,      
