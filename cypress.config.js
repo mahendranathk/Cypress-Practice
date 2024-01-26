@@ -12,7 +12,7 @@ module.exports = defineConfig({
       // return config;
       cypressSplit(on, config)
       return config;
-    },
+    }
     viewportHeight:1000,
     viewportWidth:600,
     defaultCommandTimeout:8000,
