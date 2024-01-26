@@ -11,6 +11,7 @@ module.exports = defineConfig({
       // allureWriter(on, config);
       // return config;
       allureWriter(on, config);
+       cypressSplit(on, config)
       return config;
     },
     viewportHeight:1000,
