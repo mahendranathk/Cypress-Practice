@@ -10,9 +10,9 @@ module.exports = defineConfig({
       // on('file:preprocessor', webpackPreprocessor);
       // allureWriter(on, config);
       // return config;
-      cypressSplit(on, config)
+      allureWriter(on, config);
       return config;
-    }
+    },
     viewportHeight:1000,
     viewportWidth:600,
     defaultCommandTimeout:8000,
