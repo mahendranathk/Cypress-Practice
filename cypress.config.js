@@ -10,8 +10,7 @@ module.exports = defineConfig({
       // on('file:preprocessor', webpackPreprocessor);
       // allureWriter(on, config);
       // return config;
-      allureWriter(on, config);
-       cypressSplit(on, config)
+      cypressSplit(on, config)
       return config;
     },
     viewportHeight:1000,
