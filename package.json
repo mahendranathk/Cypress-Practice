@@ -7,7 +7,7 @@
     "test": "cypress run",
     "badges": "npx -p dependency-version-badge update-badge cypress cypress-split",
     "debug": "DEBUG=cypress-split SPLIT=6 SPLIT_INDEX=5 npx cypress run",
-    "lint": "tsc --noEmit cypress.config.ts"
+    "lint": "tsc --noEmit cypress.config.js"
   },
   "author": "",
   "license": "ISC",
