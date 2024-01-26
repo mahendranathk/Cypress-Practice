@@ -51,6 +51,7 @@ jobs:
         # https://github.com/cypress-io/github-action
         uses: cypress-io/github-action@v5
         env:
+          SPEC: 'cypress/e2e/*.cy.js'
           SPLIT: ${{ strategy.job-total }}
           SPLIT_INDEX: ${{ strategy.job-index }}
           DEBUG: cypress-split
